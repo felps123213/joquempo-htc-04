@@ -1,0 +1,178 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #82CDFF;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.winner-title{
+    background-color: #0099FF;
+    color: #fff;
+    height: 74px;
+    width: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px 12px 0 0; 
+    font-size: 33px;
+}
+
+.score-board-box{
+    background-color: #0099FF;
+    width: 60%;
+    height: 148px;
+    border-radius: 17px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.player-name{
+    color: #fff;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.score{
+    background-color: #dbf1ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 131px;
+    font-size: 104px;
+    font-weight: 900;
+    color: #0099FF;
+    border-radius: 17px;
+
+}
+
+.score-separator{
+    font-size: 58px;
+    color: #fff;
+}
+
+.battle-field{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    width: 100%;
+    height: 45%;
+    padding: 0 2%;
+    gap: 16px;
+}
+
+.button-move-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.button-move{
+    height: 80px;
+    width: 220px;
+    background-color: #0099FF;
+    color: white;
+    font-size: 44px;
+    border-radius: 8px;
+    border: 1px solid #0099FF;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+
+.button-move:hover{
+    background-color: #fff;
+    color: #0099FF;
+}
+
+.config-box{
+    display: flex;
+    gap: 100px;
+    margin-top: 22px;
+}
+
+.board{
+    width: 100%;
+    height: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+    background-color: #0099FF;
+    border-radius: 17px;
+}
+
+.move-box{
+    width: 36%;
+    height: 100%;
+    background-color: #dbf1ff;
+    border-radius: 17px;
+}
+
+.move-box-separator{
+    font-size: 104px;
+    color: #fff;
+    font-weight: 900;
+}
+
+@media screen and ( max-width: 728px) {
+    body{
+        padding: 1%;
+        justify-content: space-evenly;
+    }
+
+    .player-name{
+        display: none;
+    }
+
+    .winner-titel{
+        width: 90%;
+    }
+
+    .score-board-box{
+        width: 100%;
+    }
+
+    .config-box{
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .battle-field{
+        flex-direction: column;
+    }
+
+    .button-move-wrapper{
+        flex-direction: row;
+        height: unset;
+    }
+
+    .button-move{
+        font-size: 25px;
+        width: 115px;
+    }
+
+    .move-box-separator{
+        font-size: 20px;
+    }
+
+    .board{
+        padding: 10px;
+    }
+
+    .move-box{
+        width: 40%;
+    }
+}
