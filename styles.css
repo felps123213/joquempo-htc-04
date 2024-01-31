@@ -119,12 +119,23 @@ body{
     height: 100%;
     background-color: #dbf1ff;
     border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .move-box-separator{
     font-size: 104px;
     color: #fff;
     font-weight: 900;
+}
+
+.moveBox2 {
+    transform: scaleX(-1);
+}
+
+.move-box img {
+    width: 80%;
 }
 
 @media screen and ( max-width: 728px) {
