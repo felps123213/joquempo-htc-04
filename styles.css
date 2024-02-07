@@ -96,6 +96,17 @@ body{
     color: #0099FF;
 }
 
+.started{
+    background-color: red;
+    border: 1px solid red;
+    transition-duration: 300ms;
+}
+
+.started:hover{
+    background-color: #fff;
+    color: red;
+}
+
 .config-box{
     display: flex;
     gap: 100px;
